@@ -1,10 +1,10 @@
 module.exports = {
   apps: [{
     name: 'naukri-refresh',
-    script: 'scheduler.js',
+    script: '/home/NaukriRefresh/start.sh',
     cwd: '/home/NaukriRefresh',
-    env: {
-      DISPLAY: ':99'
-    }
+    interpreter: 'bash',
+    autorestart: true,
+    restart_delay: 5000,
   }]
 }
